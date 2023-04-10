@@ -1,13 +1,217 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.Flex {
+  display: flex;
+}
+
+.FemCon {
+  background-color: darkgray;
+  padding: 21px;
+  margin-left: 13px;
+    width: 432px;
+}
+.FemCon2 {
+  background-color: white;
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 100vh;
+}
+.text {
+  font-size: xx-large;
+  font-weight: bold;
+  margin-left:18px;
+}
+.cls {
+  background-color: rgb(156 163 175);
+  margin: -10px;
+  height: 100%;
+}
+.cls:hover {
+  background-color: rgb(71 85 105);
+}
+
+.PhotHead {
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.EventCon {
+  padding: 2px;
+  margin: 12px;
+  height: 75px;
+}
+.EvnHm{
+  margin-top: -82px;
+  margin-left: 163px;
+}
+.EvnHmmm{
+  height:72px;
+  width:37px;
+}
+.EventID {
+  color: white;
+  font-size: 16px;
+  margin-left: 12px;
+}
+.EventDate {
+  margin-top: -25px;
+  margin-left: 157px;
+  color: white;
+}
+.EventDet {
+  color: white;
+  margin-top: -13px;
+  margin-left: 12px;
+  font-size: 18px;
+}
+.photoe {
+  width: 655px;
+}
+.photoe .Img {
+  width: 655px;
+  height: 83vh;
+}
+.phoCON {
+  margin-left: 65px;
+}
+.head {
+  margin-top: 165px;
+  width: 256px;
+  margin-left: -100px;
+
+}
+.headPro {
+  font-weight: bold;
+  font-size: xx-large;
+}
+.BotDec {
+  font-weight: bold;
+  font-size: x-large;
+  margin-top: 10px;
+}
+.Mid{
+  margin-left: -100px;
+}
+.MidCon {
+  font-weight: 600;
+  font-size: x-large;
+}
+.Bot {
+  margin-top: 34px;
+  margin-left: -100px;
+}
+.BotCon {
+  font-weight: 600;
+  font-size: x-large;
+}
+.Description {
+  margin-left: 170px;
+}
+
+.NavCon {
+  display: flex;
+  background-color: darkblue;
+  height: 73px;
+  width: 100vw;
+}
+.Buttons {
+  display: flex;
+  margin-left: 970px;
+}
+
+.FemBut {
+  background-color: chartreuse;
+  height: 50px;
+  width: 70px;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+.MalBut {
+  background-color: red;
+  height: 50px;
+  width: 70px;
+  margin-top: 10px;
+}
+
+.NavSeq {
+  margin-left: 50px;
+  font-size: xxx-large;
+  color: cyan;
+}
+
+.SideBarCon {
+  background-color: aqua;
+  width: 109px;
+}
+
+.Hmburger {
+  height: 72px;
+  width: 38px;
+  color: gray;
+  margin-left: 15px;
+  margin-top: 19px;
+}
+.Login {
+  height: 72px;
+  width: 46px;
+  margin-left: 15px;
+  color: white;
+  margin-top: 387px;
+}
+
+.Search {
+  height: 68px;
+  width: 34px;
+  color: white;
+  margin-left: 600px;
+  position: absolute;
+}
+
+.EvnHm li{
+  position:relative;
+}
+
+.submenu{
+  position: absolute;
+  background-color: azure;
+  width:140px;
+  left:0;
+  display:none;
+}
+
+.submenu li{
+  padding: 10px;
+}
+.submenu2{
+  position:absolute;
+  right:100%;
+  width:140px;
+  top:0;
+  background-color: cadetblue;
+  display:none;
+}
+.EvnHm li:hover > .submenu{
+  display: block;
+}
+.submenu li:hover{
+  background-color:aqua;
+}
+.submenu li:hover > .submenu2{
+  display: block;
 }
